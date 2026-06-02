@@ -1,0 +1,68 @@
+{
+  "name": "@memhq/vercel-ai",
+  "version": "0.1.0",
+  "description": "MemHQ middleware for the Vercel AI SDK \u2014 auto-augment generateText / streamText with memory recall and persistence.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "memhq",
+    "vercel",
+    "ai-sdk",
+    "memory",
+    "ai",
+    "agent",
+    "llm",
+    "rag"
+  ],
+  "author": "MemHQ <hello@memhq.ai>",
+  "license": "Apache-2.0",
+  "private": false,
+  "homepage": "https://memhq.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MemHQ/sdk"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "@memhq/sdk": ">=0.1.0",
+    "ai": ">=4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@memhq/sdk": {
+      "optional": true
+    },
+    "ai": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@memhq/sdk": "workspace:*",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/MemHQ/sdk/issues"
+  }
+}

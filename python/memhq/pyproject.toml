@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "memhq"
+version = "0.1.0"
+description = "Official Python SDK for MemHQ — a Mem0-style drop-in memory layer for AI agents."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "MemHQ", email = "hello@memhq.ai" }]
+keywords = ["memory", "ai", "agent", "llm", "memhq", "mem0", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = ["httpx>=0.25.0"]
+
+[project.urls]
+Homepage = "https://memhq.ai"
+Documentation = "https://memhq.ai/docs"
+Repository = "https://github.com/memhq/memhq"
+
+[tool.setuptools]
+packages = ["memhq"]

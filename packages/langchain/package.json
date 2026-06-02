@@ -1,0 +1,65 @@
+{
+  "name": "@memhq/langchain",
+  "version": "0.1.0",
+  "description": "MemHQ adapter for LangChain.js \u2014 drop-in chat message history and retriever backed by MemHQ.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "memhq",
+    "langchain",
+    "memory",
+    "ai",
+    "agent",
+    "llm",
+    "rag",
+    "retriever"
+  ],
+  "author": "MemHQ <hello@memhq.ai>",
+  "license": "Apache-2.0",
+  "private": false,
+  "homepage": "https://memhq.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MemHQ/sdk"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "@langchain/core": ">=0.3.0",
+    "@memhq/sdk": ">=0.1.0"
+  },
+  "peerDependenciesMeta": {
+    "@memhq/sdk": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@langchain/core": "^0.3.0",
+    "@memhq/sdk": "workspace:*",
+    "typescript": "^5.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/MemHQ/sdk/issues"
+  }
+}

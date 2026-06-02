@@ -1,0 +1,11 @@
+node_modules/
+dist/
+build/
+*.egg-info/
+__pycache__/
+.venv/
+*.tgz
+*.whl
+.DS_Store
+.turbo/
+coverage/

@@ -1,0 +1,72 @@
+{
+  "name": "@memhq/mcp-server",
+  "version": "0.1.0",
+  "description": "Model Context Protocol (MCP) server for MemHQ \u2014 give Claude Code, Claude Desktop, and other MCP clients a persistent memory backed by MemHQ.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "source": "./src/index.ts"
+    },
+    "./stdio": {
+      "types": "./dist/stdio.d.ts",
+      "import": "./dist/stdio.js",
+      "source": "./src/stdio.ts"
+    },
+    "./http": {
+      "types": "./dist/http.d.ts",
+      "import": "./dist/http.js",
+      "source": "./src/http.ts"
+    }
+  },
+  "bin": {
+    "memhq-mcp": "./dist/stdio.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"import('node:fs').then(fs => fs.chmodSync('dist/stdio.js', 0o755))\"",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/stdio.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "memory",
+    "memhq",
+    "ai",
+    "agent",
+    "llm"
+  ],
+  "author": "MemHQ <hello@memhq.ai>",
+  "license": "Apache-2.0",
+  "homepage": "https://memhq.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MemHQ/sdk"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/MemHQ/sdk/issues"
+  }
+}

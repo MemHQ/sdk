@@ -1,0 +1,54 @@
+{
+  "name": "@memhq/sdk",
+  "version": "0.1.1",
+  "description": "Official TypeScript SDK for MemHQ \u2014 a Mem0-style drop-in memory layer for AI agents.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "memory",
+    "ai",
+    "agent",
+    "llm",
+    "memhq",
+    "mem0",
+    "rag"
+  ],
+  "author": "MemHQ <hello@memhq.ai>",
+  "license": "Apache-2.0",
+  "homepage": "https://memhq.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MemHQ/sdk"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/MemHQ/sdk/issues"
+  }
+}
