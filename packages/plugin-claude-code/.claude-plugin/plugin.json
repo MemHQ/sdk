@@ -1,0 +1,8 @@
+{
+  "name": "memhq",
+  "version": "0.1.0",
+  "description": "Persistent memory for Claude Code. Injects relevant context at session start and on every prompt. Auto-captures significant tool events, session summaries, and full transcripts into your MemHQ knowledge graph.",
+  "author": { "name": "MemHQ", "url": "https://memhq.ai" },
+  "homepage": "https://memhq.ai",
+  "license": "Apache-2.0"
+}

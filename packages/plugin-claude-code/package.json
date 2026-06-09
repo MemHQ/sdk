@@ -1,0 +1,33 @@
+{
+  "name": "@memhq/claude-code",
+  "version": "0.1.0",
+  "description": "MemHQ Claude Code plugin — automatic memory for every session. Injects relevant context at start, searches on every prompt, and captures key events.",
+  "files": [
+    ".claude-plugin",
+    "hooks",
+    "scripts",
+    "README.md"
+  ],
+  "keywords": [
+    "claude-code",
+    "claude-plugin",
+    "memory",
+    "memhq",
+    "ai",
+    "agent"
+  ],
+  "author": "MemHQ <hello@memhq.ai>",
+  "license": "Apache-2.0",
+  "homepage": "https://memhq.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MemHQ/sdk",
+    "directory": "packages/plugin-claude-code"
+  },
+  "bugs": {
+    "url": "https://github.com/MemHQ/sdk/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
