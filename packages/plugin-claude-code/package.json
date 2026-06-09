@@ -1,6 +1,6 @@
 {
   "name": "@memhq/claude-code",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MemHQ Claude Code plugin — automatic memory for every session. Injects relevant context at start, searches on every prompt, and captures key events.",
   "files": [
     ".claude-plugin",

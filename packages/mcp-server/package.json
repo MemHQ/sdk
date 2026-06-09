@@ -1,7 +1,7 @@
 {
   "name": "@memhq/mcp-server",
-  "version": "0.1.0",
-  "description": "Model Context Protocol (MCP) server for MemHQ \u2014 give Claude Code, Claude Desktop, and other MCP clients a persistent memory backed by MemHQ.",
+  "version": "0.1.1",
+  "description": "Model Context Protocol (MCP) server for MemHQ — give Claude Code, Claude Desktop, and other MCP clients a persistent memory backed by MemHQ.",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
