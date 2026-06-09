@@ -23,7 +23,8 @@
     }
   },
   "bin": {
-    "memhq-mcp": "./dist/stdio.js"
+    "memhq-mcp": "./dist/stdio.js",
+    "memhq-hook": "./dist/hook.js"
   },
   "files": [
     "dist",
@@ -31,7 +32,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsc && node -e \"import('node:fs').then(fs => fs.chmodSync('dist/stdio.js', 0o755))\"",
+    "build": "tsc && node -e \"import('node:fs').then(fs => { fs.chmodSync('dist/stdio.js', 0o755); fs.chmodSync('dist/hook.js', 0o755); })\"",
     "typecheck": "tsc --noEmit",
     "start": "node dist/stdio.js",
     "prepublishOnly": "npm run build"
