@@ -1,0 +1,18 @@
+{
+  "name": "memhq",
+  "owner": {
+    "name": "MemHQ"
+  },
+  "metadata": {
+    "description": "Official MemHQ plugins for Claude Code",
+    "homepage": "https://memhq.ai"
+  },
+  "plugins": [
+    {
+      "name": "claude-code",
+      "version": "0.1.1",
+      "source": "../packages/plugin-claude-code",
+      "description": "Persistent memory for Claude Code. Injects relevant context at session start and on every prompt. Auto-captures significant tool events, session summaries, and full transcripts into your MemHQ knowledge graph."
+    }
+  ]
+}
